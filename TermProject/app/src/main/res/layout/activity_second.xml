@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CD3FA"
+        app:title="Registration Page"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/secondActivityText"
+        android:layout_width="410dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="7dp"
+        android:text="Please create your account by entering the appropriate information."
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/registrationUsername"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:hint="Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondActivityText" />
+
+    <EditText
+        android:id="@+id/registrationPassword"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationUsername" />
+
+    <Button
+        android:id="@+id/submitRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

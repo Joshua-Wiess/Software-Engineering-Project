@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CD3FA"
+        app:title="Meal Options"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/potentialBreakfast"
+        android:layout_width="381dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+        android:text="Breakfast Options: Tap on the foods for their name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar" />
+
+    <ImageView
+        android:id="@+id/breakfastLeft"
+        android:layout_width="195dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialBreakfast"></ImageView>
+
+    <ImageView
+        android:id="@+id/breakfastRight"
+        android:layout_width="182dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialBreakfast"></ImageView>
+
+    <TextView
+        android:id="@+id/potentialLunch"
+        android:layout_width="394dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="188dp"
+        android:text="Lunch Options"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialBreakfast" />
+
+    <ImageView
+        android:id="@+id/lunchLeft"
+        android:layout_width="182dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialLunch"></ImageView>
+
+    <ImageView
+        android:id="@+id/lunchRight"
+        android:layout_width="182dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialLunch"></ImageView>
+
+    <TextView
+        android:id="@+id/potentialDinner"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:text="Dinner Options"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialLunch" />
+
+    <ImageView
+        android:id="@+id/dinnerRight"
+        android:layout_width="182dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialDinner"></ImageView>
+
+    <ImageView
+        android:id="@+id/dinnerLeft"
+        android:layout_width="182dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potentialDinner"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

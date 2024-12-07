@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CD3FA"
+        app:title="Food Selection"
+        app:titleTextColor="#FFFFFF"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/activityThreeInstructions"
+        android:layout_width="361dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="Click on a meal type and then tap on a food to see nutritional information and to like/dislike it."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar" />
+
+    <HorizontalScrollView
+        android:layout_width="396dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/lunchButton"
+        app:layout_constraintTop_toBottomOf="@+id/activityThreeInstructions"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="471dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/lunchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityThreeInstructions" >
+
+        <ImageView
+            android:id="@+id/topMeal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/middleMeal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/bottomMeal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            >
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mealGeneration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E91E63"
+        android:text="Meal Generation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dinnerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:text="Dinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/breakfastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="64dp"
+        android:text="Breakfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lunchButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lunchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="64dp"
+        android:text="Lunch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dinnerButton" />
+
+    <TextView
+        android:id="@+id/hiddenTextView"
+        android:layout_width="10dp"
+        android:layout_height="19dp"
+        android:text=""
+        android:textColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hiddenFood"
+        android:layout_width="10dp"
+        android:layout_height="19dp"
+        android:text=""
+        android:textColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
